@@ -6,7 +6,7 @@ import Youtube from "./Youtube";
 import InstaPage from "./InstaPage";
 import Review from "./Review";
 import ContactUs from "./ContactUS";
-
+import Homeblog from "./Homeblog";
 
 
 const Home = () => {
@@ -41,7 +41,7 @@ const Home = () => {
       <Review />
 
       {/* BRANCHES */}
-     
+      <Homeblog/>
 
       {/* CONTACT */}
       <ContactUs />

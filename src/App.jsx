@@ -14,6 +14,7 @@ import BranchJagdeo from './components/BranchJagdeo'
 import AdmissionForm from './components/AdmissionForm'
 import Blogs from './components/Blogs'
 import BankingCoachingPatnaBlog from './components/Blogs/BestCoaching'
+import Homeblog from './components/Homeblog'
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
           path='/blog/best-banking-coaching-in-patna-bscacademy'
           element={<BankingCoachingPatnaBlog />}
         />
+        <Route path='/homeblog' element={<Homeblog />} />
       </Routes>
       <Footer />
     </>

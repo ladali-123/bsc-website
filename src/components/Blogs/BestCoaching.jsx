@@ -112,7 +112,7 @@ export default function BankingCoachingPatnaBlog() {
 
   const blogData = {
     title:
-      "Best Banking Coaching in Patna – Why BSCAcademy is the Right Choice for Banking Exam Preparation",
+      "Best Banking Coaching in Patna – Why BSC Academy is the Right Choice for Banking Exam Preparation",
 
     description:
       "Looking for the best banking coaching in Patna? BSCAcademy offers expert guidance for SBI PO, IBPS Clerk, RBI, SSC, and other competitive exams with experienced faculty, mock tests, updated study material, and excellent results.",

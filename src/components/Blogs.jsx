@@ -89,7 +89,8 @@ function Blogs() {
               {/* Button */}
               <button
                 onClick={() => (window.location.href = blog.link)}
-                className="mt-6 bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-xl font-semibold transition duration-300"
+                className="mt-6 bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-xl
+                 font-semibold transition duration-300"
               >
                 Read More
               </button>
