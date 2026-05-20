@@ -11,6 +11,8 @@ import ContactUs from './components/ContactUS'
 import Footer from './components/Footer'
 import BranchRajendra from './components/BranchRajendra'
 import BranchJagdeo from './components/BranchJagdeo'
+import AdmissionForm from './components/AdmissionForm'
+import Blogs from './components/Blogs'
 
 function App() {
   return (
@@ -27,6 +29,8 @@ function App() {
 
         <Route path='/branch/rajendra-nagar' element={<BranchRajendra />} />
         <Route path='/branch/jagdeo-path' element={<BranchJagdeo />} />
+        <Route path='/admission' element={<AdmissionForm />} />
+        <Route path='/blogs' element={<Blogs />} />
       </Routes>
       <Footer />
     </>

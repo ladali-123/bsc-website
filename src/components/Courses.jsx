@@ -5,6 +5,7 @@ import {
   BriefcaseBusiness,
   CheckCircle,
 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const courses = [
   {
@@ -124,9 +125,13 @@ const CoursesSection = () => {
             </div>
 
             {/* Button */}
-            <button className="w-full bg-[#0B1FA8] hover:bg-red-600 text-white py-2.5 rounded-xl text-sm font-semibold shadow-md hover:shadow-xl transition-all duration-300 relative z-10">
+            <Link
+              to="/admission"
+              className="w-full bg-[#0B1FA8] hover:bg-red-600 text-white py-2.5 rounded-xl text-sm font-semibold shadow-md hover:shadow-xl transition-all duration-300 relative z-10 text-center block"
+            >
               Admission Open
-            </button>
+            </Link>
+
           </div>
         ))}
       </div>
@@ -135,3 +140,4 @@ const CoursesSection = () => {
 };
 
 export default CoursesSection;
+
