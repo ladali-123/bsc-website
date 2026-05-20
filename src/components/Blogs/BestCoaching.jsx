@@ -1,6 +1,115 @@
 
+
+import { useMemo } from "react";
 import banking from "../../assets/banking.png";
+
+function BlogPage({ blogData }) {
+  const html = useMemo(() => ({
+    text1: blogData?.text1 || "",
+    crux: blogData?.crux || "",
+    hookText: blogData?.hookText || "",
+    conclusion: blogData?.conclusion || "",
+  }), [blogData]);
+
+  return (
+    <div className="w-full bg-[#f4f6fb] py-10 px-5">
+      <div className="max-w-4xl mx-auto bg-white rounded-3xl shadow-lg p-6 md:p-10">
+        <div className="flex flex-col gap-6">
+          {/* Title + Date on top */}
+          <div>
+            <div className="text-sm text-red-600 font-semibold">{blogData?.date}</div>
+            <h1 className="text-3xl md:text-4xl font-extrabold text-gray-900 mt-2 leading-tight">
+              {blogData?.title}
+            </h1>
+          </div>
+
+          {/* Full image below */}
+          <div className="w-full">
+            <img
+              src={blogData?.image}
+              alt={blogData?.title}
+              className="w-full h-auto rounded-2xl"
+            />
+          </div>
+
+          {/* Description + Tags below image */}
+          <div>
+            <p className="text-gray-600 text-lg mt-4 leading-relaxed">{blogData?.description}</p>
+
+            {Array.isArray(blogData?.tags) && blogData.tags.length > 0 && (
+              <div className="flex flex-wrap gap-2 mt-5">
+                {blogData.tags.map((t) => (
+                  <span
+                    key={t}
+                    className="bg-[#f3f4f6] text-gray-800 px-3 py-1 rounded-full text-sm"
+                  >
+                    {t}
+                  </span>
+                ))}
+              </div>
+            )}
+          </div>
+        </div>
+
+        {html.text1 && (
+          <div className="mt-8 text-gray-800 text-base leading-8" dangerouslySetInnerHTML={{ __html: html.text1 }} />
+        )}
+
+        {html.crux && (
+          <div className="mt-8" dangerouslySetInnerHTML={{ __html: html.crux }} />
+        )}
+
+        {blogData?.hookTitle && (
+          <div className="mt-10">
+            <h2 className="text-2xl font-bold text-gray-900">{blogData.hookTitle}</h2>
+            {html.hookText && (
+              <div
+                className="mt-4 text-gray-800"
+                dangerouslySetInnerHTML={{ __html: html.hookText }}
+              />
+            )}
+          </div>
+        )}
+
+        {Array.isArray(blogData?.keyPoints) && blogData.keyPoints.length > 0 && (
+          <div className="mt-10">
+            <h3 className="text-xl font-bold text-gray-900">Key Points</h3>
+            <ul className="mt-4 space-y-3">
+              {blogData.keyPoints.map((p, idx) => (
+                <li
+                  key={idx}
+                  className="bg-[#f8fafc] border border-gray-200 rounded-2xl p-4 text-gray-800"
+                  dangerouslySetInnerHTML={{ __html: p }}
+                />
+              ))}
+            </ul>
+          </div>
+        )}
+
+        {Array.isArray(blogData?.faqs) && blogData.faqs.length > 0 && (
+          <div className="mt-10">
+            <h3 className="text-xl font-bold text-gray-900">FAQs</h3>
+            <div className="mt-4 space-y-4">
+              {blogData.faqs.map((f, idx) => (
+                <div key={idx} className="border border-gray-200 rounded-2xl p-4">
+                  <div className="font-semibold text-gray-900">{f.question}</div>
+                  <div className="mt-2 text-gray-700">{f.answer}</div>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {html.conclusion && (
+          <div className="mt-10" dangerouslySetInnerHTML={{ __html: html.conclusion }} />
+        )}
+      </div>
+    </div>
+  );
+}
+
 export default function BankingCoachingPatnaBlog() {
+
   const blogData = {
     title:
       "Best Banking Coaching in Patna – Why BSCAcademy is the Right Choice for Banking Exam Preparation",

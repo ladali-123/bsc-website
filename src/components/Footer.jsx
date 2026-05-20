@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import logo from "../assets/logo.jpg";
 
 const Footer = () => {
@@ -47,14 +48,36 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h2 className="text-2xl font-bold mb-6">Quick Links</h2>
-            <ul className="space-y-4 text-lg">
-              <li><a href="#">Terms & Conditions</a></li>
-              <li><a href="#">Privacy Policy</a></li>
-              <li><a href="#">Blog & News</a></li>
-              <li><a href="#">FAQ</a></li>
-            </ul>
-          </div>
+  <h2 className="text-2xl font-bold mb-6">Quick Links</h2>
+  <ul className="space-y-4 text-lg">
+    <li>
+      <a href="#" className="hover:underline hover:decoration-gray-400 underline-offset-4 transition">
+        Terms & Conditions
+      </a>
+    </li>
+
+    <li>
+      <a href="#" className="hover:underline hover:decoration-gray-400 underline-offset-4 transition">
+        Privacy Policy
+      </a>
+    </li>
+
+    <li>
+      <Link
+        to="/blogs"
+        className="hover:underline hover:decoration-gray-400 underline-offset-4 transition"
+      >
+        Blog & News
+      </Link>
+    </li>
+
+    <li>
+      <a href="#" className="hover:underline hover:decoration-gray-400 underline-offset-4 transition">
+        FAQ
+      </a>
+    </li>
+  </ul>
+</div>
 
           {/* Branch 1 */}
           <div>
