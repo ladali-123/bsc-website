@@ -14,7 +14,7 @@ const AboutUs = () => {
 
         {/* Left Side */}
         <div>
-          <h3 className="text-2xl md:text-3xl font-bold text-[#0B1FA8] leading-snug mb-6">
+          <h3 className="text-2xl md:text-3xl font-bold text-[#0B1FA8] leading-snug mb-6 text-center md:text-justify">
             Patna’s Trusted Coaching Institute for SSC,
             Banking & Railway Exams
           </h3>

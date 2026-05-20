@@ -1,14 +1,55 @@
-import pic1 from '../assets/pic1.png'
+import pic1 from "../assets/pic1.png";
+
+import AboutUs from "./AboutUs";
+import Courses from "./Courses";
+import Youtube from "./Youtube";
+import InstaPage from "./InstaPage";
+import Review from "./Review";
+import ContactUs from "./ContactUS";
+
+
 
 const Home = () => {
   return (
-    <div className="relative w-full">
-      <img src={pic1} alt="home" className="w-full" />
+    <div className="w-full">
 
-      {/* overlay */}
-      <div className="absolute inset-0 bg-black/5"></div>
+      {/* HERO SECTION */}
+      <div className="relative w-full">
+        <img
+          src={pic1}
+          alt="home"
+          className="w-full"
+        />
+
+        {/* overlay */}
+        <div className="absolute inset-0 bg-black/5"></div>
+      </div>
+
+      {/* ABOUT */}
+      <AboutUs />
+
+      {/* COURSES */}
+      <Courses />
+
+      {/* YOUTUBE */}
+      <Youtube />
+
+      {/* INSTAGRAM */}
+      <InstaPage />
+
+      {/* REVIEWS */}
+      <Review />
+
+      {/* BRANCHES */}
+     
+
+      {/* CONTACT */}
+      <ContactUs />
+
+      {/* FOOTER */}
+     
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

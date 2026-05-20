@@ -9,12 +9,14 @@ import InstaPage from './components/InstaPage'
 import Review from './components/Review'
 import ContactUs from './components/ContactUS'
 import Footer from './components/Footer'
+import BranchRajendra from './components/BranchRajendra'
+import BranchJagdeo from './components/BranchJagdeo'
 
 function App() {
   return (
     <>
+      <Navbar />
       <Routes>
-        <Navbar />
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<AboutUs />} />
         <Route path='/courses' element={<Courses />} />
@@ -22,10 +24,14 @@ function App() {
         <Route path='/instagram' element={<InstaPage />} />
         <Route path='/reviews' element={<Review />} />
         <Route path='/contact' element={<ContactUs />} />
-        <Footer />
+
+        <Route path='/branch/rajendra-nagar' element={<BranchRajendra />} />
+        <Route path='/branch/jagdeo-path' element={<BranchJagdeo />} />
       </Routes>
+      <Footer />
     </>
   )
 }
 
 export default App
+
