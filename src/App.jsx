@@ -1,5 +1,17 @@
 import './App.css'
 import { Route, Routes } from 'react-router-dom'
+
+function NotFound() {
+  return (
+    <div style={{ padding: 24, maxWidth: 900, margin: '0 auto' }}>
+      <h1 style={{ fontSize: 28, fontWeight: 800 }}>404 - Page Not Found</h1>
+      <p style={{ marginTop: 12, color: '#555' }}>
+        The page you are looking for does not exist.
+      </p>
+    </div>
+  )
+}
+
 import Navbar from './components/Navbar'
 import Home from './components/Home'
 import AboutUs from './components/AboutUs'
@@ -15,6 +27,8 @@ import AdmissionForm from './components/AdmissionForm'
 import Blogs from './components/Blogs'
 import BankingCoachingPatnaBlog from './components/Blogs/BestCoaching'
 import Homeblog from './components/Homeblog'
+import SbiBanking from './components/Blogs/SbiBanking'
+import Bestjag from './components/Blogs/Bestjag'
 
 function App() {
   return (
@@ -38,11 +52,17 @@ function App() {
           element={<BankingCoachingPatnaBlog />}
         />
         <Route path='/homeblog' element={<Homeblog />} />
+        <Route path='/blog/sbi-apprentice-recruitment-2026' element={<SbiBanking />} />
+        <Route path='/blog/best-banking-coaching-in-jagdeo-path-patna' element={<Bestjag />} />
+
+        {/* Fallback: agar hosting SPA fallback nahi kar raha ho */}
+        <Route path='*' element={<NotFound />} />
       </Routes>
       <Footer />
     </>
   )
 }
+
 
 export default App
 

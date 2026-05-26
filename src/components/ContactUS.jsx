@@ -2,7 +2,6 @@ import { useState } from "react";
 import contactImg from "../assets/contact.jpg";
 
 const ContactPage = () => {
-
   const [messageSent, setMessageSent] = useState(false);
 
   const handleSubmit = (e) => {
@@ -40,17 +39,11 @@ const ContactPage = () => {
 
           <form className="space-y-6" onSubmit={handleSubmit}>
 
-            {/* Row 1 */}
-            <div className="grid md:grid-cols-2 gap-5">
+            {/* Name */}
+            <div>
               <input
                 type="text"
                 placeholder="Name"
-                className="w-full bg-transparent border border-transparent border-b-[#0B2C6A] rounded-md py-3 px-2 outline-none focus:border-b-[#8B005D] transition"
-              />
-
-              <input
-                type="email"
-                placeholder="Email"
                 className="w-full bg-transparent border border-transparent border-b-[#0B2C6A] rounded-md py-3 px-2 outline-none focus:border-b-[#8B005D] transition"
               />
             </div>

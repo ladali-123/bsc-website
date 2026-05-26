@@ -61,11 +61,7 @@ const BranchRajendraNagar = () => {
               className="w-full p-3 border border-gray-200 rounded-xl outline-none focus:border-red-600"
             />
 
-            <input
-              type="email"
-              placeholder="Your Email"
-              className="w-full p-3 border border-gray-200 rounded-xl outline-none focus:border-red-600"
-            />
+           
 
             <input
               type="tel"

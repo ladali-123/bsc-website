@@ -1,4 +1,6 @@
 import banking from "../assets/banking.png";
+import sbi from "../assets/sbi.png";
+import jagd from "../assets/jagd.png";
 const blogs = [
   {
     id: 1,
@@ -6,17 +8,26 @@ const blogs = [
     desc: "Looking for the best banking coaching in Patna? BSCAcademy offers expert guidance for SBI PO, IBPS Clerk, RBI ...",
     image:
       banking,
-    date: "12 July 2025",
+    date: "18 May 2026",
     link: "/blog/best-banking-coaching-in-patna-bscacademy",
   },
-  // {
-  //   id: 2,
-  // title: "Best SSC Preparation Tips",
-  //   desc: "Learn smart study techniques and time management for SSC exams.",
-  // image:
-  //   "https://images.unsplash.com/photo-1513258496099-48168024aec0",
-  // date: "15 July 2025",
-  // },
+   {
+   id: 2,
+  title: "SBI Apprentice Recruitment 2026 – 7,150 Vacancies, Apply Online, Stipend, Exam Date",
+     desc: "SBI has released the official notification for 7,150 Apprentice posts across India. Apply online from May 19 to June 8, 2026 ...",
+   image:
+      sbi,
+   date: "22 May 2026",
+    link: "/blog/sbi-apprentice-recruitment-2026",
+  },
+  {
+    id: 3,
+    title: "Best Banking Coaching in Jagdeo Path, Patna: BSC Academy – Your Launchpad to a Successful Banking Career",
+    desc: "Looking for the best banking coaching in Jagdeo Path, Patna? Discover why BSC Academy is a top choice for IBPS PO, SBI Clerk ...",
+    image: jagd,
+    date: "26 May 2026",
+    link: "/blog/best-banking-coaching-in-jagdeo-path-patna",
+  }
   // {
   //  id: 3,
   //  title: "Railway Exam Complete Guide",
@@ -29,7 +40,7 @@ const blogs = [
 
 function Blogs() {
   return (
-    <div className="w-full bg-[#f4f6fb] py-8 px-5">
+    <div className="w-full bg-[#f4f6fb] py-8 md:mb-16 px-5">
 
       {/* Heading */}
       <div className="max-w-7xl mx-auto text-center">

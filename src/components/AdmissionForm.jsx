@@ -4,7 +4,6 @@ import { useState } from "react";
 import { Phone, MapPin } from "lucide-react";
 
 export default function AdmissionSection() {
-
   const [successMsg, setSuccessMsg] = useState("");
 
   const handleSubmit = (e) => {
@@ -116,27 +115,24 @@ export default function AdmissionSection() {
 
               <form onSubmit={handleSubmit} className="space-y-6">
 
-                {/* Name + Email */}
-                <div className="grid md:grid-cols-2 gap-6">
+                {/* Name */}
+                <input
+                  type="text"
+                  placeholder=" Full Name"
+                  required
+                  className="w-full border border-gray-300 rounded-xl px-5 py-4
+                  outline-none focus:border-red-600 focus:ring-2
+                  focus:ring-red-100 transition"
+                />
 
-                  <input
-                    type="text"
-                    placeholder="Your Full Name"
-                    required
-                    className="w-full border border-gray-300 rounded-xl px-5 py-4
-                    outline-none focus:border-red-600 focus:ring-2
-                    focus:ring-red-100 transition"
-                  />
-
-                  <input
-                    type="email"
-                    placeholder="Email Address"
-                    required
-                    className="w-full border border-gray-300 rounded-xl px-5 py-4
-                    outline-none focus:border-red-600 focus:ring-2
-                    focus:ring-red-100 transition"
-                  />
-                </div>
+                <input
+                  type="text"
+                  placeholder="Phone Number"
+                  required
+                  className="w-full border border-gray-300 rounded-xl px-5 py-4
+                  outline-none focus:border-red-600 focus:ring-2
+                  focus:ring-red-100 transition"
+                />
 
                 {/* Address */}
                 <input

@@ -128,10 +128,10 @@ const InstagramSection = () => {
 
           {/* Pic 1 */}
           <a
-            href="YOUR_INSTAGRAM_POST_LINK_1"
+            href="https://www.instagram.com/p/DYj7HuaFPrZ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
             target="_blank"
             rel="noopener noreferrer"
-            className="overflow-hidden rounded-xl shadow-lg"
+            className="overflow-hidden rounded-md shadow-lg"
           >
             <img
               src={insta1}
@@ -143,10 +143,10 @@ const InstagramSection = () => {
 
           {/* Pic 2 */}
           <a
-            href="YOUR_INSTAGRAM_POST_LINK_2"
+            href="https://www.instagram.com/p/DYhTuiJFcZy/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
             target="_blank"
             rel="noopener noreferrer"
-            className="overflow-hidden rounded-xl shadow-lg"
+            className="overflow-hidden rounded-md shadow-lg"
           >
             <img
               src={insta2}
@@ -158,10 +158,10 @@ const InstagramSection = () => {
 
           {/* Pic 3 */}
           <a
-            href="YOUR_INSTAGRAM_POST_LINK_3"
+            href="https://www.instagram.com/p/DYgdA7qkusq/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
             target="_blank"
             rel="noopener noreferrer"
-            className="overflow-hidden rounded-xl shadow-lg"
+            className="overflow-hidden rounded-md shadow-lg"
           >
             <img
               src={insta3}
@@ -173,10 +173,10 @@ const InstagramSection = () => {
 
           {/* Pic 4 */}
           <a
-            href="YOUR_INSTAGRAM_POST_LINK_4"
+            href="https://www.instagram.com/p/DYgUD1EiptQ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
             target="_blank"
             rel="noopener noreferrer"
-            className="overflow-hidden rounded-xl shadow-lg"
+            className="overflow-hidden rounded-md shadow-lg"
           >
             <img
               src={insta4}
