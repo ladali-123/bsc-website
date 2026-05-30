@@ -1,9 +1,21 @@
 import banking from "../assets/banking.png";
 import sbi from "../assets/sbi.png";
 import jagd from "../assets/jagd.png";
+import whybsc from "../assets/whybsc.png"
 const blogs = [
+
   {
     id: 1,
+    title: "From Preparation to Selection: How BSC Academy Supports Banking Aspirants",
+    desc:
+      "Every year, millions of young Indians sit for competitive banking exams like IBPS PO, SBI Clerk, RBI Grade B, NABARD, and RRB ....",
+    image: whybsc,
+    badge: "Banking Exam Preparation",
+    badgeColor: "bg-red-100 text-red-600",
+    link: "/blog/from-preparation-to-selection",
+  },
+  {
+    id: 2,
     title: "Best Banking Coaching in Patna – Why BSCAcademy is the Right Choice for Banking Exam Preparation",
     desc: "Looking for the best banking coaching in Patna? BSCAcademy offers expert guidance for SBI PO, IBPS Clerk, RBI ...",
     image:
@@ -11,17 +23,17 @@ const blogs = [
     date: "18 May 2026",
     link: "/blog/best-banking-coaching-in-patna-bscacademy",
   },
-   {
-   id: 2,
-  title: "SBI Apprentice Recruitment 2026 – 7,150 Vacancies, Apply Online, Stipend, Exam Date",
-     desc: "SBI has released the official notification for 7,150 Apprentice posts across India. Apply online from May 19 to June 8, 2026 ...",
-   image:
+  {
+    id: 3,
+    title: "SBI Apprentice Recruitment 2026 – 7,150 Vacancies, Apply Online, Stipend, Exam Date",
+    desc: "SBI has released the official notification for 7,150 Apprentice posts across India. Apply online from May 19 to June 8, 2026 ...",
+    image:
       sbi,
-   date: "22 May 2026",
+    date: "22 May 2026",
     link: "/blog/sbi-apprentice-recruitment-2026",
   },
   {
-    id: 3,
+    id: 4,
     title: "Best Banking Coaching in Jagdeo Path, Patna: BSC Academy – Your Launchpad to a Successful Banking Career",
     desc: "Looking for the best banking coaching in Jagdeo Path, Patna? Discover why BSC Academy is a top choice for IBPS PO, SBI Clerk ...",
     image: jagd,

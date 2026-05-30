@@ -1,7 +1,7 @@
-import banking from "../assets/banking.png";
 import sbi from "../assets/sbi.png";
 import jagd from "../assets/jagd.png";
 import { Link } from "react-router-dom";
+import whybsc from "../assets/whybsc.png";
 import { ArrowRight } from "lucide-react";
 
 export default function HomeBlogSection() {
@@ -9,13 +9,13 @@ export default function HomeBlogSection() {
     const blogs = [
         {
             id: 1,
-            title: "Best Banking Coaching in Patna – BSC Academy",
+            title: "From Preparation to Selection: How BSC Academy Supports Banking Aspirants",
             description:
-                "Looking for the best banking coaching in Patna? BSCAcademy offers expert guidance for SBI PO, IBPS Clerk, RBI, SSC, and other competitive exams...",
-            image: banking,
+                "Every year, millions of young Indians sit for competitive banking exams like IBPS PO, SBI Clerk, RBI Grade B, NABARD, and RRB ....",
+            image: whybsc,
             badge: "Banking Exam Preparation",
             badgeColor: "bg-red-100 text-red-600",
-            link: "/blog/best-banking-coaching-in-patna-bscacademy",
+            link: "/blog/from-preparation-to-selection",
         },
         {
             id: 2,
