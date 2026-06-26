@@ -1,41 +1,43 @@
-import sbi from "../assets/sbi.png";
-import jagd from "../assets/jagd.png";
-import { Link } from "react-router-dom";
-import whybsc from "../assets/whybsc.png";
-import { ArrowRight } from "lucide-react";
 
+import constImg from "../assets/const.png";
+import { Link } from "react-router-dom";
+import { ArrowRight } from "lucide-react";
+import sarkImg from "../assets/sark.png";
+import guide from "../assets/guide.png";
 export default function HomeBlogSection() {
 
     const blogs = [
+
         {
             id: 1,
-            title: "From Preparation to Selection: How BSC Academy Supports Banking Aspirants",
-            description:
-                "Every year, millions of young Indians sit for competitive banking exams like IBPS PO, SBI Clerk, RBI Grade B, NABARD, and RRB ....",
-            image: whybsc,
-            badge: "Banking Exam Preparation",
-            badgeColor: "bg-red-100 text-red-600",
-            link: "/blog/from-preparation-to-selection",
+            title: "BSC Academy Patna: More Than Just Coaching – How Discipline & Guidance Shape Success",
+            description: "Every serious banking or government exam aspirant needs structure. Discover how BSC Academy Patna builds daily routines, mentorship ...",
+            image: guide,
+            badge: "Discipline Success Guide",
+            badgeColor: "bg-pink-100 text-pink-800",
+            link: "/blog/bsc-academy-patna-discipline-guidance"
         },
+
+        {
+            id: 1,
+            title: "BSC Academy Patna — Your Ultimate Guide to Cracking Government Exams in 2026",
+            description: "Every year, lakhs of students from Bihar sit in front of their books, dreaming of the day they will walk into a government office ",
+            image: sarkImg,
+            badge: "BSC Academy Patna",
+            badgeColor: "bg-blue-100 text-blue-600",
+            link: "/blog/bsc-academy-patna-guide-2026",
+        },
+
         {
             id: 2,
-            title: "SBI Apprentice Recruitment 2026 – 7,150 Vacancies, Apply Online, Stipend, Exam Date",
-            description:
-                "SBI has released the official notification for 7,150 Apprentice posts across India. Apply online from May 19 to June 8, 2026. Monthly stipend ₹15,000. Check eligibility details and exam information.",
-            image: sbi,
-            badge: "SBI Recruitment 2026",
-            badgeColor: "bg-blue-100 text-blue-600",
-            link: "/blog/sbi-apprentice-recruitment-2026",
-        },
-        {
-            id: 3,
-            title: "Best Banking Coaching in Jagdeo Path, Patna: BSC Academy – Your Launchpad to a Successful Banking Career",
-            description: "Looking for the best banking coaching in Jagdeo Path, Patna? Discover why BSC Academy is a top choice for IBPS PO, SBI Clerk, RBI Grade B, and other banking exams along with the best preparation books and strategies.",
-            image: jagd,
-            badge: "Banking Coaching in Jagdeo Path",
+            title: "The Real Secret to Success Is Consistency and BSC Academy Helps You Build It",
+            description: "Every year, thousands of students prepare for government exams, but only a fraction succeed. The difference is consistency.",
+            image: constImg,
+            badge: "Banking Coaching",
             badgeColor: "bg-green-100 text-green-600",
-            link: "/blog/best-banking-coaching-in-jagdeo-path-patna",
-        }
+            link: "/blog/the-real secret-to-success-in-banking-exams-consistency",
+        },
+       
     ];
 
     return (

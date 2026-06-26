@@ -18,6 +18,7 @@ const Navbar = () => {
       submenu: [
         { label: "Rajendra Nagar", path: "/branch/rajendra-nagar" },
         { label: "Jagdeo Path", path: "/branch/jagdeo-path" },
+        {label : "Boring Road", path: "/branch/boring-road"},
       ],
     },
   ];

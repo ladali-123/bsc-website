@@ -3,27 +3,39 @@ import logo from "../assets/logo.jpg";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#2c29b8] text-white pt-12 pb-6">
-      <div className="max-w-7xl mx-auto px-6">
+    <footer className="bg-[#2c29b8] text-white pt-8 pb-4">
+      <div className="max-w-7xl mx-auto px-6 md:px-4">
 
-        {/* Top Section */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+        {/* Grid – 4 columns */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 items-start">
 
-          {/* Logo & About */}
+          {/* Column 1: Logo → Blog & News link → Paragraph → Social Icons */}
           <div>
+            {/* Logo */}
             <img
               src={logo}
               alt="BSC Academy"
-              className="w-72 rounded-xl shadow-lg"
+              className="w-60 rounded-xl shadow-lg"
             />
 
-            <p className="mt-6 text-gray-200 leading-8 text-lg">
+            {/* Blog & News – plain link, no box, but clearly clickable */}
+            <div className="mt-5">
+              <Link
+                to="/blogs"
+                className="text-lg text-white hover:text-blue-200 hover:underline underline-offset-4 transition duration-200"
+              >
+                Blog & News
+              </Link>
+            </div>
+
+            {/* Paragraph */}
+            <p className="text-gray-200 leading-7 text-lg mt-3">
               Join BSC Academy and take the first step towards a secure and
               successful future.
             </p>
 
             {/* Social Icons */}
-            <div className="flex items-center gap-4 mt-6">
+            <div className="flex items-center gap-4 mt-5">
               {[
                 {
                   name: "facebook",
@@ -43,7 +55,7 @@ const Footer = () => {
                   href={item.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-11 h-11 border border-white/20 rounded-md flex items-center justify-center hover:bg-white hover:text-[#2E2BBF] transition duration-300"
+                  className="w-10 h-10 border border-white/20 rounded-md flex items-center justify-center hover:bg-white hover:text-[#2E2BBF] transition duration-300"
                 >
                   <svg
                     className="w-5 h-5"
@@ -67,129 +79,94 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Quick Links */}
+          {/* Column 2: Rajendra Nagar - Branch (1st) */}
           <div>
-            <h2 className="text-2xl font-bold mb-6">Quick Links</h2>
-            <ul className="space-y-4 text-lg">
-              <li>
-                <a href="#" className="hover:underline hover:decoration-gray-400 underline-offset-4 transition">
-                  Terms & Conditions
-                </a>
-              </li>
-
-              <li>
-                <a href="#" className="hover:underline hover:decoration-gray-400 underline-offset-4 transition">
-                  Privacy Policy
-                </a>
-              </li>
-
-              <li>
-                <Link
-                  to="/blogs"
-                  className="hover:underline hover:decoration-gray-400 underline-offset-4 transition"
-                >
-                  Blog & News
-                </Link>
-              </li>
-
-              <li>
-                <a href="#" className="hover:underline hover:decoration-gray-400 underline-offset-4 transition">
-                  FAQ
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          {/* Branch 1 */}
-          <div>
-            <h2 className="text-2xl font-bold mb-6">Jagdeo Path - Branch</h2>
-
-            <div className="space-y-5 text-lg">
-
-              {/* Phone */}
-              <div className="flex gap-4 items-start">
-                <div className="w-8 flex justify-center">
-                  <svg className="w-5 h-5 mt-0.5" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011-.24 11.36 11.36 0 003.58.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.57 3.58 1 1 0 01-.24 1z" />
-                  </svg>
-                </div>
-                <p>97984 22296</p>
-              </div>
-
-              {/* Email */}
-              <div className="flex gap-4 items-start">
-                <div className="w-8 flex justify-center">
-                  <svg className="w-5 h-5 mt-0.5" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 2v.01L12 13 4 6.01V6h16zM4 18V8.236l7.386 6.158a1 1 0 001.228 0L20 8.236V18H4z" />
-                  </svg>
-                </div>
-                <p className="break-all">bscacademypatna4@gmail.com</p>
-              </div>
-
-              {/* Location */}
-              <div className="flex gap-4 items-start">
-                <div className="w-8 flex justify-center">
-                  <svg className="w-5 h-5 mt-0.5" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M12 2a7 7 0 00-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 00-7-7zm0 9.5A2.5 2.5 0 1112 6.5a2.5 2.5 0 010 5z" />
-                  </svg>
-                </div>
-                <p>
-                  Ambedkar Path, opp. Ara Garden, Jagdeo Path,
-                  Rukanpura, Patna, Bihar 800014
-                </p>
-              </div>
-
-            </div>
-          </div>
-
-          {/* Branch 2 */}
-          {/* Branch 2 */}
-          <div>
-            <h2 className="text-2xl font-bold mb-6">Rajendra Nagar - Branch</h2>
-
-            <div className="space-y-5 text-lg">
-
-              {/* Phone */}
-              <div className="flex gap-4 items-start">
-                <div className="w-8 flex justify-center">
-                  <svg className="w-5 h-5 mt-0.5" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011-.24 11.36 11.36 0 003.58.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.57 3.58 1 1 0 01-.24 1z" />
-                  </svg>
-                </div>
+            <h2 className="text-xl font-bold mb-4">Rajendra Nagar - Branch</h2>
+            <div className="space-y-3 text-lg">
+              <div className="flex gap-3 items-start">
+                <svg className="w-5 h-5 mt-0.5 flex-shrink-0" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011-.24 11.36 11.36 0 003.58.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.57 3.58 1 1 0 01-.24 1z" />
+                </svg>
                 <p>97984 22292</p>
               </div>
-
-              {/* Email */}
-              <div className="flex gap-4 items-start">
-                <div className="w-8 flex justify-center">
-                  <svg className="w-5 h-5 mt-0.5" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 2v.01L12 13 4 6.01V6h16zM4 18V8.236l7.386 6.158a1 1 0 001.228 0L20 8.236V18H4z" />
-                  </svg>
-                </div>
+              <div className="flex gap-3 items-start">
+                <svg className="w-5 h-5 mt-0.5 flex-shrink-0" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 2v.01L12 13 4 6.01V6h16zM4 18V8.236l7.386 6.158a1 1 0 001.228 0L20 8.236V18H4z" />
+                </svg>
                 <p className="break-all">bscacademypatna4@gmail.com</p>
               </div>
-
-              {/* Location */}
-              <div className="flex gap-4 items-start">
-                <div className="w-8 flex justify-center">
-                  <svg className="w-5 h-5 mt-0.5" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M12 2a7 7 0 00-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 00-7-7zm0 9.5A2.5 2.5 0 1112 6.5a2.5 2.5 0 010 5z" />
-                  </svg>
-                </div>
-                <p>
+              <div className="flex gap-3 items-start">
+                <svg className="w-5 h-5 mt-0.5 flex-shrink-0" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2a7 7 0 00-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 00-7-7zm0 9.5A2.5 2.5 0 1112 6.5a2.5 2.5 0 010 5z" />
+                </svg>
+                <p className="leading-tight">
                   Grand Arya Complex, Ground Floor, Behind Kotak Mahindra Bank,
                   Arya Kumar Road, Rajendra Nagar, Patna - 800016
                 </p>
               </div>
+            </div>
+          </div>
 
+          {/* Column 3: Boring Road - Branch (2nd) */}
+          <div>
+            <h2 className="text-xl font-bold mb-4">Boring Road - Branch</h2>
+            <div className="space-y-3 text-lg">
+              <div className="flex gap-3 items-start">
+                <svg className="w-5 h-5 mt-0.5 flex-shrink-0" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011-.24 11.36 11.36 0 003.58.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.57 3.58 1 1 0 01-.24 1z" />
+                </svg>
+                <p>97984 22293</p>
+              </div>
+              <div className="flex gap-3 items-start">
+                <svg className="w-5 h-5 mt-0.5 flex-shrink-0" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 2v.01L12 13 4 6.01V6h16zM4 18V8.236l7.386 6.158a1 1 0 001.228 0L20 8.236V18H4z" />
+                </svg>
+                <p className="break-all">bscacademypatna4@gmail.com</p>
+              </div>
+              <div className="flex gap-3 items-start">
+                <svg className="w-5 h-5 mt-0.5 flex-shrink-0" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2a7 7 0 00-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 00-7-7zm0 9.5A2.5 2.5 0 1112 6.5a2.5 2.5 0 010 5z" />
+                </svg>
+                <p className="leading-tight">
+                 Shakti Commercial Complex, A 3, West Boring Canal Road, Nearby Bharat Petrol Pump, Patna, Bihar 800001
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Column 4: Jagdeo Path - Branch (3rd) */}
+          <div>
+            <h2 className="text-xl font-bold mb-4">Jagdeo Path - Branch</h2>
+            <div className="space-y-3 text-lg">
+              <div className="flex gap-3 items-start">
+                <svg className="w-5 h-5 mt-0.5 flex-shrink-0" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011-.24 11.36 11.36 0 003.58.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.57 3.58 1 1 0 01-.24 1z" />
+                </svg>
+                <p>97984 22296</p>
+              </div>
+              <div className="flex gap-3 items-start">
+                <svg className="w-5 h-5 mt-0.5 flex-shrink-0" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 2v.01L12 13 4 6.01V6h16zM4 18V8.236l7.386 6.158a1 1 0 001.228 0L20 8.236V18H4z" />
+                </svg>
+                <p className="break-all">bscacademypatna4@gmail.com</p>
+              </div>
+              <div className="flex gap-3 items-start">
+                <svg className="w-5 h-5 mt-0.5 flex-shrink-0" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2a7 7 0 00-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 00-7-7zm0 9.5A2.5 2.5 0 1112 6.5a2.5 2.5 0 010 5z" />
+                </svg>
+                <p className="leading-tight">
+                  Ambedkar Path, opp. Ara Garden, Jagdeo Path,
+                  Rukanpura, Patna, Bihar 800014
+                </p>
+              </div>
             </div>
           </div>
 
         </div>
 
         {/* Bottom */}
-        <div className="border-t border-white/20 mt-10 pt-6">
-          <p className="text-center text-gray-200 text-base md:text-lg">
+        <div className="border-t border-white/20 mt-8 pt-5">
+          <p className="text-center text-gray-200 text-sm md:text-base">
             Copyright © 2026 All Right Reserved BSC Academy Patna
           </p>
         </div>

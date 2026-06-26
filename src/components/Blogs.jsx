@@ -2,6 +2,9 @@ import banking from "../assets/banking.png";
 import sbi from "../assets/sbi.png";
 import jagd from "../assets/jagd.png";
 import whybsc from "../assets/whybsc.png"
+import constImg from "../assets/const.png"
+import sarkImg from "../assets/sark.png"
+import guide from "../assets/guide.png";
 const blogs = [
 
   {
@@ -39,15 +42,34 @@ const blogs = [
     image: jagd,
     date: "26 May 2026",
     link: "/blog/best-banking-coaching-in-jagdeo-path-patna",
+  },
+  {
+    id: 5,
+    title: "The Real Secret to Success Is Consistency and BSC Academy Helps You Build It",
+    desc: "Every year, thousands of students prepare for government exams, but only a fraction succeed. The difference is consistency.",
+    image : constImg,
+    date: "30 May 2026",
+    link: "/blog/the-realsecret-to-success-in-banking-exams-consistency",
+  },
+
+  {
+    id: 6,
+    title: "BSC Academy Patna — Your Ultimate Guide to Cracking Government Exams in 2026",
+    desc: "Every year, lakhs of students from Bihar sit in front of their books, dreaming of the day they will walk into a government office ",
+    image: sarkImg,
+    date: "6 June 2026",
+    link: "/blog/bsc-academy-patna-guide-2026",
+  },
+
+  {
+    id:7,
+    title : "BSC Academy Patna: More Than Just Coaching – How Discipline & Guidance Shape Success",
+    desc : "Every serious banking or government exam aspirant needs structure. Discover how BSC Academy Patna builds daily routines, mentorship",
+    image : guide,
+    date : "12 june 2026",
+    link : "/blog/bsc-academy-patna-discipline-guidance"
   }
-  // {
-  //  id: 3,
-  //  title: "Railway Exam Complete Guide",
-  //  desc: "Everything you need to know about railway exam syllabus and pattern.",
-  //  image:
-  //    "https://images.unsplash.com/photo-1509062522246-3755977927d7",
-  //  date: "18 July 2025",
-  // },
+
 ];
 
 function Blogs() {

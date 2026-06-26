@@ -4,15 +4,66 @@ import about from "../assets/about.jpg";
 const BranchJagdeo = () => {
   const [sent, setSent] = useState(false);
 
-  const handleSubmit = (e) => {
+  const [formData, setFormData] = useState({
+    name: "",
+    phone: "",
+    subject: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
-    setSent(true);
+    const data = {
+      access_key: "47c24c0a-5089-41c4-8f7d-4eb96bba1a2c",
+      name: formData.name,
+      phone: formData.phone,
+      subject: formData.subject,
+      message: formData.message,
+    };
 
-    // auto hide after 3 sec
-    setTimeout(() => {
-      setSent(false);
-    }, 3000);
+    try {
+      const response = await fetch(
+        "https://api.web3forms.com/submit",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+          },
+          body: JSON.stringify(data),
+        }
+      );
+
+      const result = await response.json();
+
+      if (result.success) {
+        setSent(true);
+
+        setFormData({
+          name: "",
+          phone: "",
+          subject: "",
+          message: "",
+        });
+
+        setTimeout(() => {
+          setSent(false);
+        }, 3000);
+      } else {
+        alert("Message send nahi hua.");
+      }
+    } catch (error) {
+      console.error(error);
+      alert("Something went wrong!");
+    }
   };
 
   return (
@@ -58,25 +109,41 @@ const BranchJagdeo = () => {
 
             <input
               type="text"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
               placeholder="Your Name"
+              required
               className="w-full p-3 border border-gray-200 rounded-xl outline-none focus:border-red-600"
             />
 
             <input
               type="tel"
+              name="phone"
+              value={formData.phone}
+              onChange={handleChange}
               placeholder="Phone Number"
+              required
               className="w-full p-3 border border-gray-200 rounded-xl outline-none focus:border-red-600"
             />
 
             <input
               type="text"
+              name="subject"
+              value={formData.subject}
+              onChange={handleChange}
               placeholder="Subject"
+              required
               className="w-full p-3 border border-gray-200 rounded-xl outline-none focus:border-red-600"
             />
 
             <textarea
               rows="5"
+              name="message"
+              value={formData.message}
+              onChange={handleChange}
               placeholder="Message"
+              required
               className="w-full p-3 border border-gray-200 rounded-xl outline-none focus:border-red-600 resize-none"
             />
 
