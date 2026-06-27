@@ -1,15 +1,24 @@
-
-import constImg from "../assets/const.png";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import sarkImg from "../assets/sark.png";
 import guide from "../assets/guide.png";
+import best from "../assets/best.png";
 export default function HomeBlogSection() {
 
     const blogs = [
 
         {
             id: 1,
+            title: "Why BSC Academy Patna Is the Best Choice to Crack Your Government Job in 2026",
+            description: "Every year, lakhs of students in Bihar prepare for SSC, Banking, and Railways exams. BSC Academy Patna has been the trusted name for over 24 years ...",
+            image: best,
+            badge: "Government Exam Preparation",
+            badgeColor: "bg-blue-100 text-blue-800",
+            link: "/blog/why-bsc-academy-patna-best-choice-for-government-job-2026"
+        },
+
+        {
+            id: 2,
             title: "BSC Academy Patna: More Than Just Coaching – How Discipline & Guidance Shape Success",
             description: "Every serious banking or government exam aspirant needs structure. Discover how BSC Academy Patna builds daily routines, mentorship ...",
             image: guide,
@@ -19,7 +28,7 @@ export default function HomeBlogSection() {
         },
 
         {
-            id: 1,
+            id: 3,
             title: "BSC Academy Patna — Your Ultimate Guide to Cracking Government Exams in 2026",
             description: "Every year, lakhs of students from Bihar sit in front of their books, dreaming of the day they will walk into a government office ",
             image: sarkImg,
@@ -28,16 +37,8 @@ export default function HomeBlogSection() {
             link: "/blog/bsc-academy-patna-guide-2026",
         },
 
-        {
-            id: 2,
-            title: "The Real Secret to Success Is Consistency and BSC Academy Helps You Build It",
-            description: "Every year, thousands of students prepare for government exams, but only a fraction succeed. The difference is consistency.",
-            image: constImg,
-            badge: "Banking Coaching",
-            badgeColor: "bg-green-100 text-green-600",
-            link: "/blog/the-real secret-to-success-in-banking-exams-consistency",
-        },
-       
+
+
     ];
 
     return (

@@ -5,6 +5,7 @@ import whybsc from "../assets/whybsc.png"
 import constImg from "../assets/const.png"
 import sarkImg from "../assets/sark.png"
 import guide from "../assets/guide.png";
+import best from "../assets/best.png";
 const blogs = [
 
   {
@@ -47,7 +48,7 @@ const blogs = [
     id: 5,
     title: "The Real Secret to Success Is Consistency and BSC Academy Helps You Build It",
     desc: "Every year, thousands of students prepare for government exams, but only a fraction succeed. The difference is consistency.",
-    image : constImg,
+    image: constImg,
     date: "30 May 2026",
     link: "/blog/the-realsecret-to-success-in-banking-exams-consistency",
   },
@@ -62,12 +63,21 @@ const blogs = [
   },
 
   {
-    id:7,
-    title : "BSC Academy Patna: More Than Just Coaching – How Discipline & Guidance Shape Success",
-    desc : "Every serious banking or government exam aspirant needs structure. Discover how BSC Academy Patna builds daily routines, mentorship",
-    image : guide,
-    date : "12 june 2026",
-    link : "/blog/bsc-academy-patna-discipline-guidance"
+    id: 7,
+    title: "BSC Academy Patna: More Than Just Coaching – How Discipline & Guidance Shape Success",
+    desc: "Every serious banking or government exam aspirant needs structure. Discover how BSC Academy Patna builds daily routines, mentorship",
+    image: guide,
+    date: "12 june 2026",
+    link: "/blog/bsc-academy-patna-discipline-guidance"
+  },
+
+  {
+    id: 8,
+    title: "Why BSC Academy Patna Is the Best Choice to Crack Your Government Job in 2026",
+    desc: "Every year, lakhs of students in Bihar prepare for SSC, Banking, and Railways exams. BSC Academy Patna has been the trusted name for over 24 years ...",
+    image: best,
+    date: "27 june 2026",
+    link: "/blog/why-bsc-academy-patna-best-choice-for-government-job-2026"
   }
 
 ];
@@ -77,7 +87,7 @@ function Blogs() {
     <div className="w-full bg-[#f4f6fb] py-8 md:mb-16 px-5">
 
       {/* Heading */}
-      <div className="max-w-7xl mx-auto text-center">
+      <div className="max-w-5xl mx-auto text-center">
 
         <span className="text-red-600 font-bold uppercase tracking-widest">
           Our Blogs
@@ -94,7 +104,7 @@ function Blogs() {
       </div>
 
       {/* Blog Cards */}
-      <div className="max-w-7xl mx-auto mt-8 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="max-w-6xl mx-auto mt-8 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
         {blogs.map((blog) => (
           <div

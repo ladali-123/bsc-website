@@ -34,6 +34,7 @@ import Consist from './components/Blogs/consist';
 import Banking from './components/Blogs/Banking';
 import Guidance from './components/Blogs/Guidance';
 import Boringroad from './components/Boringroad';
+import Crack from './components/Blogs/Crack';
 
 function App() {
   return (
@@ -64,7 +65,7 @@ function App() {
         <Route path='/blog/the-real secret-to-success-in-banking-exams-consistency' element={<Consist/>} />
         <Route path='/blog/bsc-academy-patna-guide-2026' element={<Banking />} />
         <Route path ='/blog/bsc-academy-patna-discipline-guidance' element ={<Guidance/>}/>
-
+        <Route path ='/blog/why-bsc-academy-patna-best-choice-for-government-job-2026' element = {<Crack/>}/>
 
         {/* Fallback: agar hosting SPA fallback nahi kar raha ho */}
         <Route path='*' element={<NotFound />} />
