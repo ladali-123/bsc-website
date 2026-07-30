@@ -35,6 +35,9 @@ import Banking from './components/Blogs/Banking';
 import Guidance from './components/Blogs/Guidance';
 import Boringroad from './components/Boringroad';
 import Crack from './components/Blogs/Crack';
+import Ibps from './components/Blogs/Ibps';
+import Perfect from './components/Blogs/Perfect';
+import Sscprep from './components/Blogs/Sscprep';
 
 function App() {
   return (
@@ -60,14 +63,16 @@ function App() {
         />
         <Route path='/homeblog' element={<Homeblog />} />
         <Route path='/blog/sbi-apprentice-recruitment-2026' element={<SbiBanking />} />
-        <Route path='/blog/best-banking-coaching-in-jagdeo-path-patna' element={<Bestjag />} />
+        <Route path='/blog/best-banking-coaching-in-saguna-more-patna' element={<Bestjag />} />
         <Route path='/blog/from-preparation-to-selection' element={<WhyBsc/>} />
         <Route path='/blog/the-real secret-to-success-in-banking-exams-consistency' element={<Consist/>} />
         <Route path='/blog/bsc-academy-patna-guide-2026' element={<Banking />} />
         <Route path ='/blog/bsc-academy-patna-discipline-guidance' element ={<Guidance/>}/>
         <Route path ='/blog/why-bsc-academy-patna-best-choice-for-government-job-2026' element = {<Crack/>}/>
-
-        {/* Fallback: agar hosting SPA fallback nahi kar raha ho */}
+        <Route path ='/blog/ibps-po-2026-notification-out-ibps-po-salary-2026' element = {<Ibps/>}/>
+        <Route path ='/blog/bank-ssc-railway-exams-2026-complete-guide' element = {<Perfect/>}/>
+        <Route path ='/blog/ssc-cgl-2026-preparation-strategy' element = {<Sscprep/>}/>
+        
         <Route path='*' element={<NotFound />} />
       </Routes>
       <Footer />

@@ -6,13 +6,16 @@ import constImg from "../assets/const.png"
 import sarkImg from "../assets/sark.png"
 import guide from "../assets/guide.png";
 import best from "../assets/best.png";
+import ibpss from "../assets/ibpss.png";
+import rail from "../assets/rail.png";
+import cglp from "../assets/cglp.png";
+
 const blogs = [
 
   {
     id: 1,
     title: "From Preparation to Selection: How BSC Academy Supports Banking Aspirants",
-    desc:
-      "Every year, millions of young Indians sit for competitive banking exams like IBPS PO, SBI Clerk, RBI Grade B, NABARD, and RRB ....",
+    desc:"Every year, millions of young Indians sit for competitive banking exams like IBPS PO, SBI Clerk, RBI Grade B, NABARD, and RRB ....",
     image: whybsc,
     badge: "Banking Exam Preparation",
     badgeColor: "bg-red-100 text-red-600",
@@ -38,11 +41,11 @@ const blogs = [
   },
   {
     id: 4,
-    title: "Best Banking Coaching in Jagdeo Path, Patna: BSC Academy – Your Launchpad to a Successful Banking Career",
-    desc: "Looking for the best banking coaching in Jagdeo Path, Patna? Discover why BSC Academy is a top choice for IBPS PO, SBI Clerk ...",
+    title: "Best Banking Coaching in Saguna More, Patna: BSC Academy – Your Launchpad to a Successful Banking Career",
+    desc: "Looking for the best banking coaching in Saguna More, Patna? Discover why BSC Academy is a top choice for IBPS PO, SBI Clerk ...",
     image: jagd,
     date: "26 May 2026",
-    link: "/blog/best-banking-coaching-in-jagdeo-path-patna",
+    link: "/blog/best-banking-coaching-in-saguna-more-patna",
   },
   {
     id: 5,
@@ -78,6 +81,33 @@ const blogs = [
     image: best,
     date: "27 june 2026",
     link: "/blog/why-bsc-academy-patna-best-choice-for-government-job-2026"
+  },
+
+  {
+    id: 9,
+    title: "IBPS PO 2026 Notification Out: Apply Online for 6,715 Vacancies, Check Exam Date",
+    desc: "The Institute of Banking Personnel Selection (IBPS) has released the official notification for the IBPS PO 2026 exam. A total of 6,715 vacancies ...",
+    image: ibpss,
+    date: "1 July 2026",
+    link: "/blog/ibps-po-2026-notification-out-ibps-po-salary-2026"
+  },
+
+  {
+    id: 10,
+    title: "BSC Academy Patna: Your Ultimate Guide to Cracking Government Exams in 2026",
+    desc: "Every year, lakhs of students from Bihar sit in front of their books, dreaming of the day they will walk into a government office. BSC Academy Patna has been the trusted name for over 24 years ...",
+    image: rail,
+    date: "13 July 2026",
+    link: "/blog/bank-ssc-railway-exams-2026-complete-guide"
+  },
+
+  {
+    id: 11,
+    title: "SSC CGL 2026 Preparation Strategy: Complete 45-Day Study Plan for Beginners in Patna",
+    desc: "SSC CGL 2026 Tier 1 exam is coming in August-September 2026. Get a simple, day-wise preparation plan, subject-wise tips, and expert guidance from BSC Academy Patna to boost your score.",
+    image: cglp,
+    date: "25 July 2026",
+    link: "/blog/ssc-cgl-2026-preparation-strategy"
   }
 
 ];

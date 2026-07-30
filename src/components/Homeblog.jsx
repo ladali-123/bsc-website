@@ -1,43 +1,42 @@
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
-import sarkImg from "../assets/sark.png";
-import guide from "../assets/guide.png";
-import best from "../assets/best.png";
+import ibpss from "../assets/ibpss.png";
+import cglp from "../assets/cglp.png";
+
+import rail from "../assets/rail.png";
 export default function HomeBlogSection() {
 
     const blogs = [
 
         {
             id: 1,
-            title: "Why BSC Academy Patna Is the Best Choice to Crack Your Government Job in 2026",
-            description: "Every year, lakhs of students in Bihar prepare for SSC, Banking, and Railways exams. BSC Academy Patna has been the trusted name for over 24 years ...",
-            image: best,
-            badge: "Government Exam Preparation",
-            badgeColor: "bg-blue-100 text-blue-800",
-            link: "/blog/why-bsc-academy-patna-best-choice-for-government-job-2026"
+            title: "SSC CGL 2026 Preparation Strategy: Complete 45-Day Study Plan for Beginners in Patna",
+            description: "SSC CGL 2026 Tier 1 exam is coming in August-September 2026. Get a simple, day-wise preparation plan, subject-wise tips, and expert guidance from BSC Academy Patna to boost your score.",
+            image: cglp,
+            badge: "SSC CGL 2026",
+            badgeColor: "bg-purple-100 text-purple-800",
+            link: "/blog/ssc-cgl-2026-preparation-strategy"
         },
 
         {
             id: 2,
-            title: "BSC Academy Patna: More Than Just Coaching – How Discipline & Guidance Shape Success",
-            description: "Every serious banking or government exam aspirant needs structure. Discover how BSC Academy Patna builds daily routines, mentorship ...",
-            image: guide,
-            badge: "Discipline Success Guide",
-            badgeColor: "bg-pink-100 text-pink-800",
-            link: "/blog/bsc-academy-patna-discipline-guidance"
+            title: "BSC Academy Patna: Your Ultimate Guide to Cracking Government Exams in 2026",
+            description: "Every year, lakhs of students from Bihar sit in front of their books, dreaming of the day they will walk into a government office. BSC Academy Patna has been the trusted name for over 24 years ...",
+            image: rail,
+            badge: "Government Exam Preparation",
+            badgeColor: "bg-blue-100 text-blue-800",
+            link: "/blog/bank-ssc-railway-exams-2026-complete-guide"
         },
 
         {
             id: 3,
-            title: "BSC Academy Patna — Your Ultimate Guide to Cracking Government Exams in 2026",
-            description: "Every year, lakhs of students from Bihar sit in front of their books, dreaming of the day they will walk into a government office ",
-            image: sarkImg,
-            badge: "BSC Academy Patna",
-            badgeColor: "bg-blue-100 text-blue-600",
-            link: "/blog/bsc-academy-patna-guide-2026",
+            title: "IBPS PO 2026 Notification Out: Apply Online for 6,715 Vacancies, Check Exam Date",
+            description: "The Institute of Banking Personnel Selection (IBPS) has released the official notification for the IBPS PO 2026 exam. A total of 6,715 vacancies ...",
+            image: ibpss,
+            badge: "IBPS PO 2026",
+            badgeColor: "bg-green-100 text-green-800",
+            link: "/blog/ibps-po-2026-notification-out-ibps-po-salary-2026"
         },
-
-
 
     ];
 

@@ -59,6 +59,30 @@ function BlogPage({ blogData }) {
           </div>
         </div>
 
+        {/* Google My Business CTA - placed right after intro so it catches the eye first */}
+        {blogData?.gmbLink && (
+          <div className="mt-6 bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-100 rounded-2xl p-5 md:p-6 flex flex-col md:flex-row items-center justify-between gap-4">
+            <div className="text-center md:text-left">
+              <h3 className="text-lg md:text-xl font-bold text-gray-900">
+                {blogData?.gmbTitle || "Visit BSC Academy on Google Today!"}
+              </h3>
+              <p className="text-gray-600 mt-1">
+                {blogData?.gmbText ||
+                  "Check our latest reviews, timings, photos and directions on Google right now."}
+              </p>
+            </div>
+
+            <a
+              href={blogData.gmbLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="shrink-0 bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-full transition-colors whitespace-nowrap"
+            >
+              View on Google →
+            </a>
+          </div>
+        )}
+
         {/* Main Content */}
         {html.text1 && (
           <div
@@ -153,16 +177,23 @@ function BlogPage({ blogData }) {
 export default function BSCAcademyBlog() {
   const blogData = {
     title:
-      "Best Banking Coaching in Jagdeo Path, Patna: BSC Academy – Your Launchpad to a Successful Banking Career",
+      "Best Banking Coaching in Saguna More, Patna: BSC Academy – Your Launchpad to a Successful Banking Career",
 
     description:
-      "Looking for the best banking coaching in Jagdeo Path, Patna? Discover why BSC Academy is a top choice for IBPS PO, SBI Clerk, RBI Grade B, and other banking exams along with the best preparation books and strategies.",
+      "Looking for the best banking coaching in Saguna More, Patna? Discover why BSC Academy is a top choice for IBPS PO, SBI Clerk, RBI Grade B, and other banking exams along with the best preparation books and strategies.",
 
     date: "2026-05-26",
 
     image: jagd,
 
-    link: "/blog/best-banking-coaching-in-jagdeo-path-patna",
+    link: "/blog/best-banking-coaching-in-saguna-more-patna",
+
+    // Google My Business CTA link (opens directly on click)
+    gmbLink:
+      "https://www.google.com/search?client=ms-android-samsung-rvo1&hs=epLq&sca_esv=9b2bce15ce0d44fb&cs=0&hl=en-IN&output=search&kgmid=/g/11bwf8w733&q=BSC+Coaching-+Best+Bank+SSC+Railway+Coaching+in+Patna+Bailey+Road&shem=epsd1,ltae,rimspwouoe&shndl=30&source=sh/x/loc/act/m1/4&kgs=20e62a9933377722&utm_source=epsd1,ltae,rimspwouoe,sh/x/loc/act/m1/4",
+    gmbTitle: "Visit BSC Academy on Google Today!",
+    gmbText:
+      "Check our latest reviews, timings, photos and directions on Google Maps right now.",
 
     tags: [
       "BSC Academy",
@@ -177,7 +208,7 @@ export default function BSCAcademyBlog() {
 
     text1: `
       <p style="font-size: 1.125rem; line-height: 1.8; margin-bottom: 1.5rem; color: #374151;">
-        Are you dreaming of a secure and prestigious government banking job in 2026? If you are searching for the <strong>best banking coaching in Jagdeo Path, Patna</strong>, then <strong>BSC Academy</strong> is one name you will hear repeatedly.
+        Are you dreaming of a secure and prestigious government banking job in 2026? If you are searching for the <strong>best banking coaching in Saguna More, Patna</strong>, then <strong>BSC Academy</strong> is one name you will hear repeatedly.
       </p>
 
       <p style="font-size: 1.125rem; line-height: 1.8; margin-bottom: 1.5rem; color: #374151;">
