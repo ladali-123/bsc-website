@@ -9,6 +9,7 @@ import best from "../assets/best.png";
 import ibpss from "../assets/ibpss.png";
 import rail from "../assets/rail.png";
 import cglp from "../assets/cglp.png";
+import topper from "../assets/topper.png";
 
 const blogs = [
 
@@ -108,6 +109,15 @@ const blogs = [
     image: cglp,
     date: "25 July 2026",
     link: "/blog/ssc-cgl-2026-preparation-strategy"
+  },
+
+  {
+    id: 12,
+    title : "Self-Study Isn't Working? Here's Why Toppers Choose BSC Academy Patna",
+    desc : "Preparing for SSC, Railway, or Banking exams alone can only take you so far. Here's how mock tests, doubt sessions, experienced teachers, and dedicated branches at BSC Academy Patna help...",
+    image : topper,
+    date : "7 August 2026",
+    link : "/blog/self-study-vs-bsc-academy-patna"
   }
 
 ];

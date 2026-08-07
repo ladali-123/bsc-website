@@ -1,12 +1,22 @@
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
-import ibpss from "../assets/ibpss.png";
 import cglp from "../assets/cglp.png";
+import topper from "../assets/topper.png";
 
 import rail from "../assets/rail.png";
 export default function HomeBlogSection() {
 
     const blogs = [
+
+        {
+            id: 1,
+            title: "Self-Study Isn't Working? Here's Why Toppers Choose BSC Academy Patna",
+            description: "Preparing for SSC, Railway, or Banking exams alone can only take you so far. Here's how mock tests, doubt sessions, experienced teachers, and dedicated branches at BSC Academy Patna help...",
+            image: topper,
+            badge: "BSC Academy Patna",
+            badgeColor: "bg-red-100 text-red-800",
+            link: "/blog/self-study-vs-bsc-academy-patna"
+        },
 
         {
             id: 1,
@@ -26,16 +36,6 @@ export default function HomeBlogSection() {
             badge: "Government Exam Preparation",
             badgeColor: "bg-blue-100 text-blue-800",
             link: "/blog/bank-ssc-railway-exams-2026-complete-guide"
-        },
-
-        {
-            id: 3,
-            title: "IBPS PO 2026 Notification Out: Apply Online for 6,715 Vacancies, Check Exam Date",
-            description: "The Institute of Banking Personnel Selection (IBPS) has released the official notification for the IBPS PO 2026 exam. A total of 6,715 vacancies ...",
-            image: ibpss,
-            badge: "IBPS PO 2026",
-            badgeColor: "bg-green-100 text-green-800",
-            link: "/blog/ibps-po-2026-notification-out-ibps-po-salary-2026"
         },
 
     ];
