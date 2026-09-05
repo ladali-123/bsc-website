@@ -10,6 +10,7 @@ import ibpss from "../assets/ibpss.png";
 import rail from "../assets/rail.png";
 import cglp from "../assets/cglp.png";
 import topper from "../assets/topper.png";
+import govtjob from "../assets/govtjob.png";
 
 const blogs = [
 
@@ -118,6 +119,15 @@ const blogs = [
     image : topper,
     date : "7 August 2026",
     link : "/blog/self-study-vs-bsc-academy-patna"
+  },
+
+  {
+    id: 13,
+    title: "SSC CGL, IBPS PO, RRB NTPC & Bihar Govt Jobs 2026: One Blog, All Syllabus & Vacancy Updates",
+    desc: "Preparing for SSC CGL, IBPS PO, RRB NTPC, or BPSC/BSSC at the same time? Here's every upcoming exam stage, vacancy count, and syllabus you need to track right now — with nothing outdated...",
+    image: govtjob,
+    date: "5 September 2026",
+    link: "/blog/ssc-cgl-ibps-po-rrb-ntpc-bihar-jobs-2026"
   }
 
 ];
@@ -144,7 +154,7 @@ function Blogs() {
       </div>
 
       {/* Blog Cards */}
-      <div className="max-w-6xl mx-auto mt-8 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="max-w-7xl mx-auto mt-8 grid md:grid-cols-2 lg:grid-cols-3 gap-8 md:px-4">
 
         {blogs.map((blog) => (
           <div

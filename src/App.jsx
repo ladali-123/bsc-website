@@ -39,6 +39,7 @@ import Ibps from './components/Blogs/Ibps';
 import Perfect from './components/Blogs/Perfect';
 import Sscprep from './components/Blogs/Sscprep';
 import Topper from './components/Blogs/Topper';
+import Govtjobs from './components/Blogs/Govtjobs';
 
 function App() {
   return (
@@ -74,7 +75,9 @@ function App() {
         <Route path ='/blog/bank-ssc-railway-exams-2026-complete-guide' element = {<Perfect/>}/>
         <Route path ='/blog/ssc-cgl-2026-preparation-strategy' element = {<Sscprep/>}/>
         <Route path ='/blog/self-study-vs-bsc-academy-patna' element = {<Topper/>}/>
-        
+        <Route path ='/blog/ssc-cgl-ibps-po-rrb-ntpc-bihar-jobs-2026' element = {<Govtjobs/>}/>
+
+
         <Route path='*' element={<NotFound />} />
       </Routes>
       <Footer />

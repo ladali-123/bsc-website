@@ -2,11 +2,21 @@ import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import cglp from "../assets/cglp.png";
 import topper from "../assets/topper.png";
+import govtjob from "../assets/govtjob.png";
 
-import rail from "../assets/rail.png";
 export default function HomeBlogSection() {
 
     const blogs = [
+
+         {
+            id: 1,
+            title: "SSC CGL, IBPS PO, RRB NTPC & Bihar Govt Jobs 2026: One Blog, All Syllabus & Vacancy Updates",
+            description: "Preparing for SSC CGL, IBPS PO, RRB NTPC, or BPSC/BSSC at the same time? Here's every upcoming exam stage, vacancy count, and syllabus you need to track right now — with nothing outdated...",
+            image: govtjob,
+            badge: "Govt Jobs 2026",
+            badgeColor: "bg-green-100 text-green-800",
+            link: "/blog/ssc-cgl-ibps-po-rrb-ntpc-bihar-jobs-2026"
+        },
 
         {
             id: 1,
@@ -26,16 +36,6 @@ export default function HomeBlogSection() {
             badge: "SSC CGL 2026",
             badgeColor: "bg-purple-100 text-purple-800",
             link: "/blog/ssc-cgl-2026-preparation-strategy"
-        },
-
-        {
-            id: 2,
-            title: "BSC Academy Patna: Your Ultimate Guide to Cracking Government Exams in 2026",
-            description: "Every year, lakhs of students from Bihar sit in front of their books, dreaming of the day they will walk into a government office. BSC Academy Patna has been the trusted name for over 24 years ...",
-            image: rail,
-            badge: "Government Exam Preparation",
-            badgeColor: "bg-blue-100 text-blue-800",
-            link: "/blog/bank-ssc-railway-exams-2026-complete-guide"
         },
 
     ];
