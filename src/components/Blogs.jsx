@@ -11,6 +11,8 @@ import rail from "../assets/rail.png";
 import cglp from "../assets/cglp.png";
 import topper from "../assets/topper.png";
 import govtjob from "../assets/govtjob.png";
+import bankingprep from "../assets/bankingprep.png";
+import chslblog from "../assets/chslblog.png";
 
 const blogs = [
 
@@ -128,7 +130,25 @@ const blogs = [
     image: govtjob,
     date: "5 September 2026",
     link: "/blog/ssc-cgl-ibps-po-rrb-ntpc-bihar-jobs-2026"
-  }
+  },
+
+  {
+    id: 14,
+    title: "How to Prepare for Banking Exams: A Step-by-Step Strategy Guide by BSC Academy Patna",
+    desc: "IBPS PO, IBPS Clerk, SBI PO, SBI Clerk, RBI Grade B — no matter which banking exam you're targeting, here's a complete section-wise breakdown of exam pattern, subject-wise strategy, a weekly timetable...",
+    image: bankingprep,
+    date: "15 September 2026",
+    link: "/blog/how-to-prepare-for-banking-exams"
+  },
+
+  {
+    id: 15,
+    title: "SSC CHSL 2026 Notification Out: How to Start Your Preparation Today",
+    desc: "SSC CHSL 2026 notification is officially out — here's a complete section-wise breakdown of Tier 1 & Tier 2 exam pattern, subject-wise strategy, a realistic study plan, and how BSC Academy's guidance can take you from aspirant to selected candidate...",
+    image: chslblog,
+    date: "25 September 2026",
+    link: "/blog/ssc-chsl-2026-preparation-guide"
+}
 
 ];
 

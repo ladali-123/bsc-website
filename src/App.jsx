@@ -40,6 +40,8 @@ import Perfect from './components/Blogs/Perfect';
 import Sscprep from './components/Blogs/Sscprep';
 import Topper from './components/Blogs/Topper';
 import Govtjobs from './components/Blogs/Govtjobs';
+import Bankingprep from './components/Blogs/Bankingprep';
+import Chslblog from './components/Blogs/Chslblog';
 
 function App() {
   return (
@@ -76,7 +78,8 @@ function App() {
         <Route path ='/blog/ssc-cgl-2026-preparation-strategy' element = {<Sscprep/>}/>
         <Route path ='/blog/self-study-vs-bsc-academy-patna' element = {<Topper/>}/>
         <Route path ='/blog/ssc-cgl-ibps-po-rrb-ntpc-bihar-jobs-2026' element = {<Govtjobs/>}/>
-
+        <Route path='/blog/how-to-prepare-for-banking-exams' element={<Bankingprep/>}/>
+        <Route path='/blog/ssc-chsl-2026-preparation-guide' element={<Chslblog/>}/>
 
         <Route path='*' element={<NotFound />} />
       </Routes>
