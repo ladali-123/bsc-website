@@ -42,6 +42,8 @@ import Topper from './components/Blogs/Topper';
 import Govtjobs from './components/Blogs/Govtjobs';
 import Bankingprep from './components/Blogs/Bankingprep';
 import Chslblog from './components/Blogs/Chslblog';
+import CglBlog from "./components/Blogs/Cglblog";
+import MockBlog from './components/Blogs/Mockblog';
 
 function App() {
   return (
@@ -80,6 +82,8 @@ function App() {
         <Route path ='/blog/ssc-cgl-ibps-po-rrb-ntpc-bihar-jobs-2026' element = {<Govtjobs/>}/>
         <Route path='/blog/how-to-prepare-for-banking-exams' element={<Bankingprep/>}/>
         <Route path='/blog/ssc-chsl-2026-preparation-guide' element={<Chslblog/>}/>
+        <Route path='/blog/ssc-cgl-2026-tier-1-strategy-tier-2-roadmap' element={<CglBlog />} />
+        <Route path='/blog/how-to-prepare-revision-mock-test-analysis' element={<MockBlog />} />
 
         <Route path='*' element={<NotFound />} />
       </Routes>
